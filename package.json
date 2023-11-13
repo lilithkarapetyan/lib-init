@@ -1,0 +1,28 @@
+{
+  "name": "lib-init",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js --mode development",
+    "build-prod": "webpack --config webpack.config.js --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilithkarapetyan/lib-init.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lilithkarapetyan/lib-init/issues"
+  },
+  "homepage": "https://github.com/lilithkarapetyan/lib-init#readme",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}
