@@ -11,21 +11,22 @@ let img = null;
 
 function setup() {
     createCanvas(window.innerWidth, window.innerHeight);
-    // backgroundMusic = loadSound("./assets/sounds/background_music.mp3")
-    // play();
+    backgroundMusic = loadSound("./assets/sounds/background_music.mp3")
+    play();
     img = loadImage("https://www.imgonline.com.ua/examples/random-pixels-background-big.jpg");
 }
 
 function mousePressed() {
     if(startMusic) {
-        // backgroundMusic.play();
+        backgroundMusic.play();
         startMusic = false;
     }
 }
 
 function draw() {
-    background(img, 0, 0);
+    background(BACKGROUD_COLOR);
     fill(WORD_COLOR);
+    noStroke();
     for (let word of visibleWords) {
         const visibleText = word === currentWord ? word.text.slice(currentIndex): word.text;
         text(visibleText, word.x, Math.floor(word.y));
